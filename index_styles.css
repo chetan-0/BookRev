@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.login-container{
+    height:100%;
+    width:100%;
+    position:absolute;
+
+}
+.login-form{
+    width: 380px;
+    height:480px;
+    position:relative;
+    margin: 6% auto;
+    background: #ffffff;
+    padding:5px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.toggle{
+    width: 220px;
+    position:relative;
+    margin: 35px auto;
+    box-shadow: 0 0 20px 9px #5144ff1f;
+    border-radius: 30px;
+}
+.toggle-button{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline:none;
+    position: relative; 
+}
+#selected-btn{
+    top:0;
+    left:0;
+    position: absolute;
+    width:110px;
+    height:100%;
+    background:linear-gradient(to right, hsl(241, 100%, 77%),hsl(241, 100%, 77%));
+    border-radius: 30px;
+    transition:.5s;
+}
+.credentials{
+    top: 180px;
+    position:absolute;
+    width:280px;
+    transition:.5s;
+}
+.input{
+    width:100%;
+    padding: 5px 0;
+    margin: 5px 0;
+    outline:none;
+    background: transparent;
+}
+.submit-btn{
+    width:85%;
+    padding: 10px 30px;
+    cursor:pointer;
+    display:block;
+    margin:auto;
+    background:linear-gradient(to right, hsl(241, 100%, 77%),hsl(241, 100%, 77%));
+    border:none;
+}
+#login{
+    left: 50px;
+}
+#sign-up{
+    left: 450px;
+}
