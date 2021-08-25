@@ -72,3 +72,9 @@
 #sign-up{
     left: 450px;
 }
+.input{
+    border-radius: 10px;
+}
+.submit-btn{
+    border-radius: 10px;
+}
