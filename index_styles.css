@@ -40,7 +40,7 @@ body{
     justify-content:space-between;
 }
 #sign-up{
-    background:red;
+    /* background:red; */
     
     left: 450px;
     display:flex;
