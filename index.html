@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index_styles.css">
+    <link rel="stylesheet" type="text/css" href="edit_index_style.css">
     <title>Login Page</title>
 </head>
-<body background="books_bg.jpg">
-    <div calss="login-container">
-        <div class="login-form"><br>
-            <div align="center"><h1>Welcome to Book Haven!</h1></div>
+
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <div id="welcome" align="center">
+                <h1>Welcome to Book Haven!</h1>
+            </div>
             <div class="toggle">
                 <div id="selected-btn"></div>
                 <button type="button" class="toggle-button" onclick="Login()">Login</button>
@@ -40,16 +43,20 @@
         let b = document.getElementById("sign-up");
         let c = document.getElementById("selected-btn");
 
-        function SignUp(){
-            a.style.left="-400px";
-            b.style.left="50px";
-            c.style.left="110px";
+        function SignUp() {
+            a.style.left = "-400px";
+            b.style.left = "50px";
+            // document.getElementById("selected-btn").style.left = "135px";
+            c.style.right = "0px";
+            c.style.left = "auto";
         }
-        function Login(){
-            a.style.left="50px";
-            b.style.left="450px";
-            c.style.left="0px";
+        function Login() {
+            a.style.left = "50px";
+            b.style.left = "450px";
+            c.style.left = "0px";
+            c.style.right = "auto";
         }
     </script>
 </body>
+
 </html>
