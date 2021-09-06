@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("books_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+#welcome{
+    margin-top:8%;
+}
+
+.login-container{
+    /* background-color:red; */
+    position:block; /* extra to prevent empty rele set */
+}
+
+.login-form {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: #ffffff;
+    padding: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#login{
+    /* background:red; */
+    
+    left: 50px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:space-between;
+}
+#sign-up{
+    background:red;
+    
+    left: 450px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:space-between;
+}
+
+.toggle {
+    position: relative;
+    margin: 35px auto;
+    box-shadow: 0 0 20px 9px #5144ff1f;
+    border-radius: 30px;
+
+    /* changes */
+    display: flex;
+    justify-content: space-between;
+    width: 62%;
+}
+.toggle-button {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+
+    /* changes */
+    /* background-color:rgba(0,0,0,0.5); */
+    width: 45%;
+    margin: 0%;
+}
+#selected-btn {
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, rgb(140, 138, 255), rgb(140, 138, 255));
+    border-radius: 30px;
+
+    /* changes */
+    /* display:none; */
+    transition: all 1s linear;
+}
+.credentials {
+    position: absolute;
+    top: 180px;
+    width: 280px;
+    transition: 0.5s;
+}
+.input {
+    width: 100%;
+    padding: 5px 5px;
+    /* margin: 5px 0; */
+    outline: none;
+    background: transparent;
+}
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, hsl(241, 100%, 77%), hsl(241, 100%, 77%));
+    border: none;
+}
+
+.input {
+    border-radius: 10px;
+}
+.submit-btn {
+    border-radius: 10px;
+}
