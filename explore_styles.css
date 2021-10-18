@@ -13,6 +13,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: black;
 }
 
 .container {
@@ -21,7 +22,7 @@ body {
 }
 
 .col-md {
-  height: 200px;
+  height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,14 +71,23 @@ body {
   background-image: url("assets/booklights.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 200%;
+  background-size: 250%;
 }
 
 #nonfiction {
   background-image: url("assets/nonfiction.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 200%;
+  background-size: 250%;
+}
+
+@media screen and (max-width: 1199px) {
+  #fiction {
+    background-size: 300%;
+  }
+  #nonfiction {
+    background-size: 300%;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -95,4 +105,4 @@ body {
     background-size: 300%;
   }
 }
-/*# sourceMappingURL=home_styles.css.map */
+/*# sourceMappingURL=explore_styles.css.map */
