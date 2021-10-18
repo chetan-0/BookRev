@@ -1,6 +1,11 @@
 body {
     margin: 0%;
     padding: 0%;
+
+    // background-image: url("books_bg.jpg");
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
 }
 #welcome {
     margin-top: 2%;
@@ -8,7 +13,7 @@ body {
     align-content: center;
     justify-content: center;
 
-    color:black;
+    color: black;
 }
 // #event_scroll {
 //     background-color: red;
@@ -101,14 +106,15 @@ body {
         margin: 0%;
         padding: 5% 1%;
         h3 {
-            font-size: calc(1.0em + 0.5em);
+            font-size: calc(1em + 0.5em);
+            text-align: center;
 
             margin: 0%;
             padding: 0% 5%;
 
-            color:rgba(0,0,0,1);
-            background-color: rgba(255,255,255,0.8);
-            border-radius:10px;
+            color: rgba(0, 0, 0, 1);
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
         }
     }
 }
