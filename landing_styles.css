@@ -1,20 +1,20 @@
-body {
-  margin: 0%;
-  padding: 0%;
-  background-image: url("/assets/books_bg.jpg");
-  background-size: cover;
+body{
+  background-color: aqua;
 }
-
-#landing_welcome {
-  margin-top: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: black;
+.navbar{
+  background-color: rgb(140, 138, 255);
+}
+.navbar ul{
+  overflow: auto;;
+}
+.navbar li{
+  list-style: none;
+  float:left;
+  margin:5px;
+}
+.navbar li a{
+  padding: 5px;
+  color: white;
+  text-decoration: none;
 }
 /*# sourceMappingURL=landing_styles.css.map */
