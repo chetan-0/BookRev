@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index_styles.css">
     <title>Login Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -17,8 +18,8 @@
             </div>
             <div class="toggle">
                 <div id="selected-btn"></div>
-                <button type="button" class="toggle-button" onclick="Login()">Login</button>
-                <button type="button" class="toggle-button" onclick="SignUp()">Sign up</button>
+                <button type="button" class="toggle-button" onclick="Transition1()">Login</button>
+                <button type="button" class="toggle-button" onclick="Transition2()">Sign up</button>
             </div><br><br>
             <form id="login" class="credentials" action="landing.html">
                 <label>Email</label>
@@ -29,12 +30,12 @@
             </form>
             <form id="sign-up" class="credentials">
                 <label>Email</label>
-                <input type="email" class="input" required><br><br>
+                <input type="email" class="input" id="SignEmail" required><br><br>
                 <label>Password</label>
-                <input type="password" class="input" required><br>
+                <input type="password" class="input" id="SignPass" required><br>
                 <label>Confirm password</label>
-                <input type="password" class="input" required><br>
-                <button type="submit" class="submit-btn" onclick="Login()">Sign up</button>
+                <input type="password" class="input" id="SignConPass" required><br>
+                <button type="button" class="submit-btn" id="sign-up-submit">Sign up</button>
             </form>
         </div>
     </div>
@@ -43,21 +44,38 @@
         let b = document.getElementById("sign-up");
         let c = document.getElementById("selected-btn");
 
-        function SignUp() {
+        function Transition2() {
             a.style.left = "-400px";
             b.style.left = "50px";
-            // document.getElementById("selected-btn").style.left = "135px";
             c.style.right = "0px";
             c.style.left = "auto";
         }
-        function Login() {
+        function Transition1() {
             a.style.left = "50px";
             b.style.left = "450px";
             c.style.left = "0px";
             c.style.right = "auto";
         }
+        // Jquery implementation
+        $(function () {
+            $("#sign-up-submit").click(function () {
+                let p = $("#SignPass").val();
+                let q = $("#SignConPass").val();
+                let w = $("#SignEmail").val();
+                const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                if (!re.test(String(w).toLowerCase())) {
+                    alert("Enter a valid Email address!")
+                }
+                else {
+                    if (p != q && p != "")
+                        alert("Passwords do not match!");
+                    if (p == q && q != "")
+                        document.location.href = "landing.html";
+                }
+            });
+        });
     </script>
-    <a href="explore.html">Explorer</a>
+    <a href="explore.html">Explore</a>
     <a href="landing.html">Landing</a>
 </body>
 
