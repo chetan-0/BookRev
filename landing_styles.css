@@ -2,19 +2,16 @@ body {
   margin: 0%;
   padding: 0%;
   background-image: url("books_bg.jpg");
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
   background-size: cover;
 }
 
 #landing_welcome {
   margin-top: 2%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-content: center;
+  justify-content: center;
+
   color: black;
 }
-/*# sourceMappingURL=landing_styles.css.map */
