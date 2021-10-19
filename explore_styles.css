@@ -82,6 +82,18 @@ body {
   background-size: 250%;
 }
 
+#beginner {
+  background-image: url("assets/beginner.jpg");
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+
+#scifi {
+  background-image: url("assets/scifi.jpg");
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+
 @media screen and (max-width: 1199px) {
   #fiction {
     background-size: 300%;
