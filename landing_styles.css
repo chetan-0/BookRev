@@ -10,7 +10,7 @@ body{
 .navbar li{
   list-style: none;
   float:left;
-  margin:5px;
+  margin:10px;
 }
 .navbar li a{
   padding: 5px;
