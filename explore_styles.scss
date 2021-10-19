@@ -2,10 +2,10 @@ body {
     margin: 0%;
     padding: 0%;
 
-    // background-image: url("books_bg.jpg");
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
+    background-image: url("assets/books_bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 #welcome {
     margin-top: 2%;
@@ -76,12 +76,8 @@ body {
     padding: 0%;
 }
 
-// .row {
-//     background-color: green;
-// }
-
 .col-md {
-    // background-color: purple;
+    // background-color: blue;
     // border: 1px solid black;
 
     height: 300px;
@@ -140,8 +136,20 @@ body {
 #scifi {
     background-image: url("assets/scifi.jpg");
     background-repeat: no-repeat;
-    // background-position: center;
-    background-size: 200%;
+    background-position: center;
+    background-size: 150%;
+}
+#cfiction {
+    background-image: url("assets/crimefiction.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300%;
+}
+#thriller {
+    background-image: url("assets/thriller.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 280%;
 }
 
 @media screen and (max-width: 1199px) {

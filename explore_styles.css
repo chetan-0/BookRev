@@ -1,6 +1,10 @@
 body {
   margin: 0%;
   padding: 0%;
+  background-image: url("books_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 #welcome {
@@ -91,7 +95,22 @@ body {
 #scifi {
   background-image: url("assets/scifi.jpg");
   background-repeat: no-repeat;
-  background-size: 200%;
+  background-position: center;
+  background-size: 150%;
+}
+
+#cfiction {
+  background-image: url("assets/crimefiction.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300%;
+}
+
+#thriller {
+  background-image: url("assets/thriller.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 280%;
 }
 
 @media screen and (max-width: 1199px) {
