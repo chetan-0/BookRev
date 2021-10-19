@@ -1,8 +1,19 @@
-body{
-  background-color: aqua;
+body {
+  margin: 0%;
+  padding: 0%;
+  background-image: url("books_bg.jpg");
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  background-size: cover;
 }
-.navbar{
-  background-color: rgb(140, 138, 255);
+
+#landing_welcome {
+  margin-top: 2%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  color: black;
 }
 .navbar ul{
   overflow: auto;;
