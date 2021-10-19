@@ -1,7 +1,7 @@
 body {
   margin: 0%;
   padding: 0%;
-  background-image: url("books_bg.jpg");
+  background-image: url("/assets/books_bg.jpg");
   background-size: cover;
 }
 
