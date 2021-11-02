@@ -1,0 +1,48 @@
+body {
+    margin: 0%;
+    padding: 0%;
+
+    background-image: url("../assets/books_bg.jpg");
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    background-size: cover;
+}
+#welcome {
+    margin-top: 2%;
+    display: flex;
+    /* flex-direction: column; */
+    align-content: center;
+    justify-content: center;
+
+    color: black;
+}
+
+#genrename {
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+#goback {
+    position: absolute;
+    margin-left: 5%;
+}
+
+.booklistmember {
+    width: 90%;
+    margin: 2% auto;
+    border: 2px solid black;
+    border-radius:20px;
+    padding: 1% 5%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.booklistmembercontent {
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.booklistmemberimg {
+    width: 15%;
+}

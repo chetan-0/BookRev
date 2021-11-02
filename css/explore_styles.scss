@@ -15,56 +15,6 @@ body {
 
     color: black;
 }
-// #event_scroll {
-//     background-color: red;
-//     margin: 0% 0% 0% 0%;
-//     padding: 0%;
-//     display: grid;
-//     grid-template-columns: 3fr 1fr;
-//     grid-column-gap: 0%;
-//     max-height: 100vh;
-// }
-// #event_grid {
-//     /* width:100%; */
-//     /* margin-top:2%; */
-//     height: 90%;
-//     padding: 0% 5%;
-//     display: grid;
-//     grid-column-gap: 10%;
-//     grid-row-gap: 10%;
-//     grid-template-columns: 1fr 1fr 1fr;
-//     grid-template-rows: 1fr 1fr 1fr;
-// }
-// #scroll {
-//     position: sticky;
-//     margin: 0%;
-//     padding-left: 5%;
-//     width: 80%;
-//     height: 90%;
-//     overflow-x: hidden;
-//     overflow-y: scroll;
-//     border-left: 2px black solid;
-// }
-// .grid_member {
-//     width: 80%;
-//     /* height: 0%; */
-//     margin: 0%;
-//     padding: 4% 4% 0% 4%;
-//     overflow-wrap: normal;
-//     border: 2px rgb(36, 0, 36) solid;
-//     border-radius: 10px;
-//     /* display: flex;
-//     align-items:center;
-//     justify-content: center; */
-//     background-color: rgb(128, 0, 128);
-// }
-// .scroll_member {
-//     width: 100%;
-//     margin: 1% 0%;
-//     padding: 0.5% 0%;
-//     overflow-wrap: normal;
-//     border-left: 4px gray solid;
-// }
 
 //!!!!!!!!!!!!!!!!!!!!!
 .container {
@@ -115,23 +65,27 @@ body {
     }
 }
 
+a{
+    text-decoration: none;
+}
+
+#beginner {
+    background-image: url("../assets/beginner.jpg");
+    background-repeat: no-repeat;
+    // background-position: center;
+    background-size: 200%;
+}
 #fiction {
     background-image: url("../assets/booklights.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 250%;
+    background-size: 270%;
 }
 #nonfiction {
     background-image: url("../assets/nonfiction.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 250%;
-}
-#beginner {
-    background-image: url("../assets/beginner.jpg");
-    background-repeat: no-repeat;
-    // background-position: center;
-    background-size: 200%;
 }
 #scifi {
     background-image: url("../assets/scifi.jpg");

@@ -70,11 +70,21 @@ body {
   border-radius: 10px;
 }
 
+a {
+  text-decoration: none;
+}
+
+#beginner {
+  background-image: url("../assets/beginner.jpg");
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+
 #fiction {
   background-image: url("../assets/booklights.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 250%;
+  background-size: 270%;
 }
 
 #nonfiction {
@@ -82,12 +92,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 250%;
-}
-
-#beginner {
-  background-image: url("../assets/beginner.jpg");
-  background-repeat: no-repeat;
-  background-size: 200%;
 }
 
 #scifi {
