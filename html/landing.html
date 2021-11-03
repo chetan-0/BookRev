@@ -52,7 +52,7 @@
             Generate a random book quote by clicking here!
           </h3>
         </div>
-        <button id="clkbtn" onclick="loadJSON()">
+        <button id="clkbtn" onclick="loadJSON()" onmouseover="func()">
           click here
         </button>
       </div>
@@ -69,6 +69,11 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="../landing.js"></script>
+  <script>
+    function func(){
+      document.getElementById("clkbtn").style.backgroundColor="purple";
+    }
+  </script>
 </body>
 
 </html>
