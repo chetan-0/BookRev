@@ -1,3 +1,11 @@
+#clkbtn{
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(177, 144, 184);
+  text-align: center;
+}
+
 body {
   font-family: 'Times New Roman', Times, serif;
   background-color: #eee;
