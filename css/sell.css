@@ -71,13 +71,6 @@ body {
     background-color: lavender;
     margin: 0;
   }
-  .logo{
-    /* padding-right:500px; */
-    padding-top: 10px;
-    padding-left: 20px;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-   }
    
   img{
      
@@ -100,10 +93,7 @@ body {
     padding: 7px;
   }
   
-  /* NAVBAR START */
   nav {
-      padding-top: 5px;
-    height: 40px;
     width: 100%;
     background-color: rgb(177, 144, 184);
     color: #eee;
@@ -125,8 +115,9 @@ body {
     color: #eee;
     text-decoration: none;
   }
-  nav li:hover {
+  nav a:hover {
     background-color: rgb(214, 200, 214);
+    color:rgb(106, 33, 124) !important;
   }
   nav a#openup {
     display: none;

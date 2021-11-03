@@ -1,13 +1,6 @@
 body {
     margin: 0%;
     padding: 0%;
-
-    // background-image: url("../assets/books_bg.jpg");
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
-
-    // background-color: rgb(140, 138, 255);
 }
 #welcome {
     margin-top: 2%;
@@ -17,21 +10,12 @@ body {
 
     color: black;
 }
-
-//!!!!!!!!!!!!!!!!!!!!!
 .container {
-    // background-color: red;
-    // border: 2px solid black;
-
-    // margin:0%;
     margin-top: 4%;
     padding: 0%;
 }
 
 .col-md {
-    // background-color: blue;
-    // border: 1px solid black;
-
     height: 300px;
 
     display: flex;
@@ -48,7 +32,6 @@ body {
 
         display: flex;
         flex-direction: column;
-        // justify-content: center;
         align-items: center;
 
         margin: 0%;
@@ -76,7 +59,6 @@ a {
 #beginner {
     background-image: url("../assets/beginner.jpg");
     background-repeat: no-repeat;
-    // background-position: center;
     background-size: 200%;
 }
 #fiction {
@@ -110,10 +92,7 @@ a {
     background-size: 280%;
 }
 
-/* NAVBAR START */
 nav {
-    // padding-top: 5px;
-    // height: 40px;
     width: 100%;
     background-color: rgb(177, 144, 184);
     color: #ffffff;
@@ -143,10 +122,6 @@ nav a:hover {
 nav a#openup {
     display: none;
 }
-.logo:hover{
-color:white !important;
-}
-
 @media screen and (max-width: 590px) {
     .content {
         padding-top: 50px;
@@ -218,7 +193,6 @@ color:white !important;
 .cf {
     zoom: 1;
 }
-/* NAVBAR END*/
 
 @media screen and (max-width: 1199px) {
     #fiction {
@@ -234,7 +208,6 @@ color:white !important;
         margin-top: 8%;
     }
     .container {
-        // margin:0% 2%;
         margin-top: 8%;
         width: 80%;
     }

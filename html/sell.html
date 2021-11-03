@@ -1,98 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    <div id="show">
-        <header>
-            <nav class='cf'>
-                <ul class='cf'>
-                  <li class="logo">
-                        <b>BookRev.</b>
-                  </li>
-                  <li>
-                    <a href='../html/landing.html'>Home</a>
-                  </li>
-                  <li>
-                    <a href='../html/explore.html'>Explore</a>
-                  </li>
-                  <li>
-                    <a href='../html/sell.html'>Sell</a>
-                  </li>
-                  <li>
-                    <a href='../html/buy.html'>Buy</a>
-                  </li>
-                  <li class="right">
-                    <a href='../index.html'>Sign-in/up</a>
-                  </li>
-                </ul>
-                <a href='#' id='openup'>MENU</a>
-              </nav>
-        </header>
+  <div id="show">
+    <header>
+      <nav class='cf'>
+        <ul class='cf'>
+          <li class="logo">
+            <a href='../html/landing.html'>
+              <b>BookRev.</b>
+            </a>
+          </li>
+          <li>
+            <a href='../html/landing.html'>Home</a>
+          </li>
+          <li>
+            <a href='../html/explore.html'>Explore</a>
+          </li>
+          <li>
+            <a href='../html/sell.html'>Sell</a>
+          </li>
+          <li>
+            <a href='../html/buy.html'>Buy</a>
+          </li>
+          <li class="right">
+            <a href='../index.html'>Sign-in/up</a>
+          </li>
+        </ul>
+        <a href='#' id='openup'>MENU</a>
+      </nav>
+    </header>
+  </div>
+
+  <!--WebTech!-->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/sell.css">
+  <div class="main">
+    <div class="formcss">
+      <div ng-app="" class="cen">
+        <form name="myForm" novalidate="" id="formcss">
+          <h1><u>Enter details of the book to be sold</u></h1>
+          <label style="font-size: 1.2em;"><b>Name of the book:</b></label>
+          <input type="text" class="input" name="name" ng-model="name" pattern="[a-zA-Z ]{1,}" required=""><br>
+          <span ng-show="myForm.$submitted || myForm.name.$dirty">
+            <span class="error" ng-show="myForm.name.$error.required"><i class="fa fa-exclamation-circle"></i> Name
+              Required</span>
+            <span class="error" ng-show="myForm.name.$error.pattern"><i class="fa fa-exclamation-circle"></i> Name
+              cannot be Number</span>
+          </span><br><br>
+
+          <label style="font-size: 1.2em;"><b>Short Description:</b></label>
+          <textarea name="desc" class="binput" ng-model="desc" pattern="[a-zA-Z ]" required=""></textarea><br>
+          <span ng-show="myForm.$submitted || myForm.desc.$dirty">
+            <span class="error" ng-show="myForm.desc.$error.required"><i class="fa fa-exclamation-circle"></i>
+              Description required</span>
+            <span class="error" ng-show="myForm.desc.$error.pattern"><i class="fa fa-exclamation-circle"></i>
+              Description should only contain letters</span>
+          </span><br><br>
+
+          <label style="font-size: 1.2em;"><b>Cost price of book:</b></label>
+          <input type="number" class="sinput" name="cost" ng-model="cost" ng-minlength="3" ng-maxlength="10"
+            required=""><br>
+          <span ng-show="myForm.$submitted || myForm.cost.$dirty">
+            <span class="error" ng-show="myForm.cost.$error.required"><i class="fa fa-exclamation-circle"></i> Cost
+              price Required</span>
+            <span class="error"
+              ng-show="((myForm.cost.$error.minlength || myForm.cost.$error.maxlength) &amp;&amp; myForm.phone.$dirty)"><i
+                class="fa fa-exclamation-circle"></i> Cost price should be atleast 100</span>
+          </span><br><br>
+
+          <label style="font-size: 1.2em;"><b>Selling price of book:</b></label>
+          <input type="number" class="sinput" name="sell" ng-model="sell" ng-minlength="3" ng-maxlength="10"
+            required=""><br>
+          <span ng-show="myForm.$submitted || myForm.sell.$dirty">
+            <span class="error" ng-show="myForm.sell.$error.required"><i class="fa fa-exclamation-circle"></i> Selling
+              price Required</span>
+            <span class="error"
+              ng-show="((myForm.sell.$error.minlength || myForm.sell.$error.maxlength) &amp;&amp; myForm.phone.$dirty)"><i
+                class="fa fa-exclamation-circle"></i> Selling price should be atleast 100</span>
+          </span><br><br>
+
+
+
+
+          <label style="font-size: 1.2em;"><b>Contact Number</b></label>
+          <input type="number" class="input" name="phone" ng-model="phone" ng-minlength="10" ng-maxlength="10"
+            required=""><br>
+          <span ng-show="myForm.$submitted || myForm.phone.$dirty">
+            <span class="error" ng-show="myForm.phone.$error.required"><i class="fa fa-exclamation-circle"></i> Phone
+              Number Required</span>
+            <span class="error"
+              ng-show="((myForm.phone.$error.minlength || myForm.phone.$error.maxlength) &amp;&amp; myForm.phone.$dirty)"><i
+                class="fa fa-exclamation-circle"></i> Phone Number Should be 10 digits</span>
+          </span><br><br>
+
+          <br>
+          <div class="form-group">
+            <label for="inputfile" style="font-size: 1.2em;"><b>Upload picture of book:</b></label>
+            <input type="file" id="fileupload" file-mode;="cust.file">
+          </div>
+          <button type="submit" class="sellbtn" id="sell" onmouseover="sell()"> Submit</button>
+        </form>
+      </div>
     </div>
-    
-<!--WebTech!-->
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="../css/sell.css">
-<div class="main">
-<div class="formcss">
-<div ng-app="" class="cen">
-    <form name="myForm" novalidate="" id="formcss">
-        <h1><u>Enter details of the book to be sold</u></h1>
-        <label style="font-size: 1.2em;"><b>Name of the book:</b></label>
-        <input type="text" class="input" name="name" ng-model="name" pattern="[a-zA-Z ]{1,}" required=""><br>
-        <span ng-show="myForm.$submitted || myForm.name.$dirty">
-            <span class="error" ng-show="myForm.name.$error.required"><i class="fa fa-exclamation-circle"></i> Name Required</span>
-            <span class="error" ng-show="myForm.name.$error.pattern"><i class="fa fa-exclamation-circle"></i> Name cannot be Number</span>
-        </span><br><br>
-
-        <label style="font-size: 1.2em;" ><b>Short Description:</b></label>
-        <textarea name="desc" class="binput" ng-model="desc" pattern="[a-zA-Z ]" required=""></textarea><br>
-        <span ng-show="myForm.$submitted || myForm.desc.$dirty">
-            <span class="error" ng-show="myForm.desc.$error.required"><i class="fa fa-exclamation-circle"></i> Description required</span>
-            <span class="error" ng-show="myForm.desc.$error.pattern"><i class="fa fa-exclamation-circle"></i> Description should only contain letters</span>
-        </span><br><br>
-
-        <label style="font-size: 1.2em;"><b>Cost price of book:</b></label>
-        <input type="number" class="sinput" name="cost" ng-model="cost" ng-minlength="3" ng-maxlength="10" required=""><br>
-        <span ng-show="myForm.$submitted || myForm.cost.$dirty">
-            <span class="error" ng-show="myForm.cost.$error.required"><i class="fa fa-exclamation-circle"></i> Cost price Required</span>
-            <span class="error" ng-show="((myForm.cost.$error.minlength || myForm.cost.$error.maxlength) &amp;&amp; myForm.phone.$dirty)"><i class="fa fa-exclamation-circle"></i> Cost price should be atleast 100</span>
-        </span><br><br>
-
-        <label style="font-size: 1.2em;"><b>Selling price of book:</b></label>
-        <input type="number" class="sinput" name="sell" ng-model="sell" ng-minlength="3" ng-maxlength="10" required=""><br>
-        <span ng-show="myForm.$submitted || myForm.sell.$dirty">
-            <span class="error" ng-show="myForm.sell.$error.required"><i class="fa fa-exclamation-circle"></i> Selling price Required</span>
-            <span class="error" ng-show="((myForm.sell.$error.minlength || myForm.sell.$error.maxlength) &amp;&amp; myForm.phone.$dirty)"><i class="fa fa-exclamation-circle"></i> Selling price should be atleast 100</span>
-        </span><br><br>
-
-
-    
-
-        <label style="font-size: 1.2em;"><b>Contact Number</b></label>
-        <input type="number" class="input" name="phone" ng-model="phone" ng-minlength="10" ng-maxlength="10" required=""><br>
-        <span ng-show="myForm.$submitted || myForm.phone.$dirty">
-            <span class="error" ng-show="myForm.phone.$error.required"><i class="fa fa-exclamation-circle"></i> Phone Number Required</span>
-            <span class="error" ng-show="((myForm.phone.$error.minlength || myForm.phone.$error.maxlength) &amp;&amp; myForm.phone.$dirty)"><i class="fa fa-exclamation-circle"></i> Phone Number Should be 10 digits</span>
-        </span><br><br>
-
-        <br>
-        <div class="form-group">
-        <label for="inputfile" style="font-size: 1.2em;"><b>Upload picture of book:</b></label>
-        <input type="file" id="fileupload" file-mode;="cust.file">
-    </div>
-        <button type="submit" class="sellbtn" id="sell" onmouseover="sell()"> Submit</button>
-    </form>
-</div>
-</div> 
-</div>                  
+  </div>
 </body>
+
 </html>

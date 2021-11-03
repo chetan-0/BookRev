@@ -1,4 +1,4 @@
-#clkbtn{
+#clkbtn {
   width: 80px;
   height: 40px;
   border-radius: 20px;
@@ -7,31 +7,21 @@
 }
 
 body {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   background-color: #eee;
- 
 
   margin: 0;
 }
-.logo{
-  /* padding-right:500px; */
-  padding-top: 10px;
-  padding-left: 20px;
-  font-size: 18px;
-  font-family: 'Times New Roman', Times, serif;
- }
- 
-img{
-   
-    float: right;
-   padding-top: 100px; 
-   padding-right: 100px;
-   
+
+img {
+  float: right;
+  padding-top: 100px;
+  padding-right: 100px;
 }
-.content{
-   float: left;
-   padding-top: 150px;
-   padding-left: 90px;
+.content {
+  float: left;
+  padding-top: 150px;
+  padding-left: 90px;
 }
 h1 {
   font-size: 4em;
@@ -41,13 +31,11 @@ h1 {
   padding: 10px;
 }
 
-/* NAVBAR START */
 nav {
-    padding-top: 5px;
-  height: 40px;
   width: 100%;
   background-color: rgb(177, 144, 184);
-  color: #eee;
+  color: #ffffff;
+  padding-left: 2%;
 }
 nav ul {
   padding: 0;
@@ -73,21 +61,15 @@ nav a#openup {
   display: none;
 }
 
-
-
-
-
-@media screen and (max-width:590px) {
-  .content{
-      padding-top: 50px;
-      padding-left: 25%;
+@media screen and (max-width: 590px) {
+  .content {
+    padding-top: 50px;
+    padding-left: 25%;
   }
-  img{
-      width:70%;
-      padding-top: 10px;
-      padding-right: 200000px;
-      
-      
+  img {
+    width: 70%;
+    padding-top: 10px;
+    padding-right: 200000px;
   }
   h1 {
     font-size: 2.8em;
@@ -120,9 +102,7 @@ nav a#openup {
     content: "|||";
     transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
-    /* IE 9 */
     -webkit-transform: rotate(-90deg);
-    /* Safari and Chrome */
     width: 30px;
     height: 30px;
     display: inline-block;
@@ -137,8 +117,8 @@ nav a#openup {
     position: relative;
   }
 }
-/* NAVBAR END*/
-.cf:before, .cf:after {
+.cf:before,
+.cf:after {
   content: "";
   display: table;
 }
@@ -150,17 +130,15 @@ nav a#openup {
 .cf {
   zoom: 1;
 }
-@media screen and (max-width:400px) {
-  .content{
-      padding-top: 50px;
-      padding-left: 15%;
+@media screen and (max-width: 400px) {
+  .content {
+    padding-top: 50px;
+    padding-left: 15%;
   }
-  img{
-      width:70%;
-      padding-top: 10px;
-      padding-left: 500px;
-      
-      
+  img {
+    width: 70%;
+    padding-top: 10px;
+    padding-left: 500px;
   }
   h1 {
     font-size: 2.8em;
@@ -193,9 +171,7 @@ nav a#openup {
     content: "|||";
     transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
-    /* IE 9 */
     -webkit-transform: rotate(-90deg);
-    /* Safari and Chrome */
     width: 30px;
     height: 30px;
     display: inline-block;
@@ -210,22 +186,17 @@ nav a#openup {
     position: relative;
   }
 }
-@media screen and (max-width:900px) {
-  .content{
-      padding-top: 20px;
-      padding-left: 25%;
+@media screen and (max-width: 900px) {
+  .content {
+    padding-top: 20px;
+    padding-left: 25%;
   }
-  img{
-      width:50%;
-      padding-top:5px;
-      padding-right: 200px;
-      
-      
+  img {
+    width: 50%;
+    padding-top: 5px;
+    padding-right: 200px;
   }
-  
 }
-/* For IE 6/7 (trigger hasLayout) */
-.text{
-margin-left: 100px;
-
+.text {
+  margin-left: 100px;
 }

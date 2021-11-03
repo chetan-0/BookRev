@@ -115,7 +115,6 @@ a {
   background-size: 280%;
 }
 
-/* NAVBAR START */
 nav {
   width: 100%;
   background-color: #b190b8;
@@ -150,10 +149,6 @@ nav a:hover {
 
 nav a#openup {
   display: none;
-}
-
-.logo:hover {
-  color: white !important;
 }
 
 @media screen and (max-width: 590px) {
@@ -228,7 +223,6 @@ nav a#openup {
   zoom: 1;
 }
 
-/* NAVBAR END*/
 @media screen and (max-width: 1199px) {
   #fiction {
     background-size: 300%;
