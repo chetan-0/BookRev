@@ -2,10 +2,12 @@ body {
     margin: 0%;
     padding: 0%;
 
-    background-image: url("../assets/books_bg.jpg");
+    // background-image: url("../assets/books_bg.jpg");
     // background-repeat: no-repeat;
     // background-position: center;
-    background-size: cover;
+    // background-size: cover;
+
+    // background-color: rgb(140, 138, 255);
 }
 #welcome {
     margin-top: 2%;
@@ -65,8 +67,10 @@ body {
     }
 }
 
-a{
+a {
     text-decoration: none;
+    padding: 0%;
+    margin: 0%;
 }
 
 #beginner {
@@ -105,6 +109,116 @@ a{
     background-position: center;
     background-size: 280%;
 }
+
+/* NAVBAR START */
+nav {
+    // padding-top: 5px;
+    // height: 40px;
+    width: 100%;
+    background-color: rgb(177, 144, 184);
+    color: #ffffff;
+    padding-left: 2%;
+}
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    display: inline;
+    float: left;
+}
+nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #ffffff;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: rgb(214, 200, 214);
+    color:white !important;
+}
+nav a#openup {
+    display: none;
+}
+.logo:hover{
+color:white !important;
+}
+
+@media screen and (max-width: 590px) {
+    .content {
+        padding-top: 50px;
+        padding-left: 25%;
+    }
+    img {
+        width: 70%;
+        padding-top: 10px;
+        padding-right: 200000px;
+    }
+    h1 {
+        font-size: 2.8em;
+    }
+
+    nav {
+        height: auto;
+        border-bottom: 0;
+    }
+    nav ul {
+        display: none;
+        height: auto;
+    }
+    nav li {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        background: rgb(177, 144, 184);
+        border-bottom: 1px solid rgb(124, 53, 138);
+    }
+    nav a:hover {
+        background: #444;
+    }
+    nav a#openup:after {
+        content: "|||";
+        transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Safari and Chrome */
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+    }
+    nav a#openup {
+        display: block;
+        background-color: rgb(214, 200, 214);
+        width: 100%;
+        position: relative;
+    }
+}
+.cf:before,
+.cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+/* NAVBAR END*/
 
 @media screen and (max-width: 1199px) {
     #fiction {

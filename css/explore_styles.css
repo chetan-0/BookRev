@@ -1,8 +1,6 @@
 body {
   margin: 0%;
   padding: 0%;
-  background-image: url("../assets/books_bg.jpg");
-  background-size: cover;
 }
 
 #welcome {
@@ -72,6 +70,8 @@ body {
 
 a {
   text-decoration: none;
+  padding: 0%;
+  margin: 0%;
 }
 
 #beginner {
@@ -115,6 +115,120 @@ a {
   background-size: 280%;
 }
 
+/* NAVBAR START */
+nav {
+  width: 100%;
+  background-color: #b190b8;
+  color: #ffffff;
+  padding-left: 2%;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  float: left;
+}
+
+nav a {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #d6c8d6;
+  color: white !important;
+}
+
+nav a#openup {
+  display: none;
+}
+
+.logo:hover {
+  color: white !important;
+}
+
+@media screen and (max-width: 590px) {
+  .content {
+    padding-top: 50px;
+    padding-left: 25%;
+  }
+  img {
+    width: 70%;
+    padding-top: 10px;
+    padding-right: 200000px;
+  }
+  h1 {
+    font-size: 2.8em;
+  }
+  nav {
+    height: auto;
+    border-bottom: 0;
+  }
+  nav ul {
+    display: none;
+    height: auto;
+  }
+  nav li {
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+    background: #b190b8;
+    border-bottom: 1px solid #7c358a;
+  }
+  nav a:hover {
+    background: #444;
+  }
+  nav a#openup:after {
+    content: "|||";
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Safari and Chrome */
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+  }
+  nav a#openup {
+    display: block;
+    background-color: #d6c8d6;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+/* NAVBAR END*/
 @media screen and (max-width: 1199px) {
   #fiction {
     background-size: 300%;
