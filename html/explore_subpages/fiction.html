@@ -10,11 +10,18 @@
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="explore_subpages.css">
     <title>Book Rev - Fiction</title>
+
+    <style>
+        #gopage{
+        border:0px;
+        background-color: rgba(0,0,0,0);
+        }
+    </style>
 </head>
 
 <body>
     <a href="../explore.html" id="goback">&lt Go back</a>
-    
+
     <h2 id="genrename" style="font-family: cursive; text-align: center;color: rgb(106, 33, 124); font-weight: bold;">
         Fiction</h2>
 
@@ -22,7 +29,12 @@
         <div class="booklistmember booklistmember2">
             <img src="fiction2.jpg" class="booklistmemberimg" />
             <div class="booklistmembercontent">
-                <h3>Remember me</h3>
+                <h3>
+                    <!-- <a href="fiction_rememberme.html">Remember me</a> -->
+                    <form  name= "rememberme" id="rememberme" class="rememberme" method="GET" action="/rememberme">
+                        <input type="submit" name="Remember Me" value="Remember Me" id="gopage" />
+                    </form>
+                </h3>
                 <p>At the height of the Spanish Civil War, 500 children are shipped to Mexico to escape the bloody
                     violence. The intent was to bring them back at the war's end, but when WWII hits, the children are
                     left stranded away from their family and the only home they ever knew.</p>
@@ -45,7 +57,6 @@
             </div>
         </div>
     </section>
-
 </body>
 
 </html>

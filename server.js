@@ -55,6 +55,14 @@ app.post('/log', u, (req, res) => {
     })
 })
 
+// function gopage() {
+//     console.log("hi");
+app.get('/rememberme', (req, res) => {
+    // res.sendFile(__dirname + "/fiction_rememberme.html")
+    res.sendFile(path.join(__dirname, './html/explore_subpages/fiction_rememberme.html'))
+})
+// }
+
 app.listen(3000, () => {
     console.log('BookRev server running!')
 })
