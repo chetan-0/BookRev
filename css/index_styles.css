@@ -96,6 +96,7 @@ body{
     /* margin: 5px 0; */
     outline: none;
     background: transparent;
+    border-radius: 10px;
 }
 .submit-btn {
     width: 85%;
@@ -105,11 +106,15 @@ body{
     margin: auto;
     background: linear-gradient(to right, hsl(241, 100%, 77%), hsl(241, 100%, 77%));
     border: none;
-}
-
-.input {
     border-radius: 10px;
 }
-.submit-btn {
-    border-radius: 10px;
+.Home{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, hsl(241, 100%, 77%), hsl(241, 100%, 77%));
+    border: none;
+    border-radius: 10px; 
 }
