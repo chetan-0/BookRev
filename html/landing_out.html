@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookRev - Home</title>
+
+  <link rel="stylesheet" href="landing_styles.css">
+</head>
+
+<body>
+  <div id="show">
+    <header>
+      <nav class='cf'>
+        <ul class='cf'>
+          <li class="logo">
+            <a href='landing_out.html'>
+              <b>BookRev.</b>
+            </a>
+          </li>
+          <li>
+            <a href='landing_out.html'>Home</a>
+          </li>
+          <li>
+            <a style="color:crimson" href='#'>Explore</a>
+          </li>
+          <li>
+            <a style="color:crimson" href='#'>Sell</a>
+          </li>
+          <li>
+            <a style="color:crimson" href='#'>Buy</a>
+          </li>
+          <li class="right">
+            <a href='../index.html'>Sign-in/up</a>
+          </li>
+        </ul>
+        <a href='#' id='openup'>MENU</a>
+      </nav>
+    </header>
+  </div>
+  <div>
+    <div class="content">
+      <h1>Welcome to <br> BookRev.</h1>
+      <h3 style="color: rgb(177, 144, 184);" class="text"><b>If you are new to reading, or just want to explore
+          genres</b></h3>
+      <h3 style="color: rgb(177, 144, 184);" class="text"><b></b>this is your place to be!</b></h3>
+      <div class="text">
+        <div class="quote-text">
+          <h3 id="quote">
+            Generate a random book quote by clicking here!
+          </h3>
+        </div>
+        <button id="clkbtn" onclick="loadJSON()" onmouseover="func()">
+          click here
+        </button>
+      </div>
+    </div>
+    <div class="img">
+      <img src="read1.png" alt="">
+    </div>
+
+  </div>
+
+
+  <script src="data.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../landing.js"></script>
+  <script>
+    function func() {
+      document.getElementById("clkbtn").style.backgroundColor = "purple";
+    }
+  </script>
+</body>
+
+</html>
