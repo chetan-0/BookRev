@@ -42,15 +42,14 @@ app.post('/log', u, (req, res) => {
         else
             console.log("mongo connected!")
         var dbo = db.db("base1");
-        dbo.collection("users").find(re).toArray(function(err, result){
-            if(err)
-            throw err
-            else if(result.length==0)
-            {
+        dbo.collection("users").find(re).toArray(function (err, result) {
+            if (err)
+                throw err
+            else if (result.length == 0) {
                 res.sendFile(path.join(__dirname, 'index.html'))
             }
-            else{
-            res.sendFile(path.join(__dirname, './html/explore.html'))
+            else {
+                res.sendFile(path.join(__dirname, './html/landing.html'))
             }
         })
     })
