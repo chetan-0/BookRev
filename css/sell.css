@@ -1,5 +1,5 @@
 body{
-    background: url("../assets/books2.jpg");
+    background: url("/books2.jpg");
 }
 
 .sellbtn{
@@ -118,9 +118,6 @@ body {
   nav a:hover {
     background-color: rgb(214, 200, 214);
     color:rgb(106, 33, 124) !important;
-  }
-  nav a#openup {
-    display: none;
   }
   
   
