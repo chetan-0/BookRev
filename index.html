@@ -21,19 +21,19 @@
                 <button type="button" class="toggle-button" onclick="Transition1()">Login</button>
                 <button type="button" class="toggle-button" onclick="Transition2()">Sign up</button>
             </div><br><br>
-            <form id="login" class="credentials" action="/explore.html">
+            <form id="login" class="credentials" method="POST" action="/log">
                 <label>Email</label>
-                <input type="email" class="input" required><br><br>
+                <input type="email" name="loginmail" class="input" required><br><br>
                 <label>Password</label>
-                <input type="password" class="input" required><br><br>
+                <input type="password" name="loginpass" class="input" required><br><br>
                 <button type="submit" class="submit-btn">Login</button><br><br>
-                <button id="back" class="submit-btn">Home</button>
+                <button id="back" class="Home">Home</button>
             </form>
-            <form id="sign-up" class="credentials">
+            <form name= "form1" id="sign-up" class="credentials" method="POST" action="/reg"> 
                 <label>Email</label>
-                <input type="email" class="input" id="SignEmail" required><br><br>
+                <input type="email" name="signupmail" class="input" id="SignEmail" required><br><br>
                 <label>Password</label>
-                <input type="password" class="input" id="SignPass" required><br>
+                <input type="password" name="signuppass" class="input" id="SignPass" required><br>
                 <label>Confirm password</label>
                 <input type="password" class="input" id="SignConPass" required><br>
                 <button type="button" class="submit-btn" id="sign-up-submit">Sign up</button>
@@ -71,10 +71,14 @@
                     if (p != q && p != "")
                         alert("Passwords do not match!");
                     if (p == q && q != "")
-                        document.location.href = "/html/explore.html";
-                }
-            });
+                    form1.submit(); 
+            }});
         });
+        $(function(){
+            $("#back").click(function(){
+                document.location.href="/landing.html";
+            })
+        })
     </script>
 </body>
 
