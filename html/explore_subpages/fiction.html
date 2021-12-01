@@ -12,27 +12,27 @@
     <title>Book Rev - Fiction</title>
 
     <style>
-        #gopage{
-        border:0px;
-        background-color: rgba(0,0,0,0);
+        #gopage {
+            border: 0px;
+            background-color: rgba(0, 0, 0, 0);
         }
     </style>
 </head>
 
 <body>
-    <a href="../explore.html" id="goback">&lt Go back</a>
+    <!-- <a href="../explore.html" id="goback">&lt Go back</a> -->
 
     <h2 id="genrename" style="font-family: cursive; text-align: center;color: rgb(106, 33, 124); font-weight: bold;">
         Fiction</h2>
 
     <section id="booklist">
         <div class="booklistmember booklistmember2">
-            <img src="fiction2.jpg" class="booklistmemberimg" />
+            <img src="fiction2.jpg" class="booklistmemberimg" width="100%" />
             <div class="booklistmembercontent">
                 <h3>
                     <!-- <a href="fiction_rememberme.html">Remember me</a> -->
-                    <form  name= "rememberme" id="rememberme" class="rememberme" method="GET" action="/rememberme">
-                        <input type="submit" name="Remember Me" value="Remember Me" id="gopage" />
+                    <form name="rememberme" id="rememberme" class="rememberme" method="GET" action="/rememberme">
+                        <input type="submit" name="remembermebtn" value="Remember Me" id="gopage" />
                     </form>
                 </h3>
                 <p>At the height of the Spanish Civil War, 500 children are shipped to Mexico to escape the bloody
@@ -43,16 +43,27 @@
         <div class="booklistmember booklistmember3">
             <img src="fiction3.jpg" class="booklistmemberimg" />
             <div class="booklistmembercontent">
-                <h3>The Alchemist</h3>
-                <p>This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an Andalusian
+                <h3>
+                    <form name="alchemist" id="alchemist" class="alchemist" method="GET" action="/alchemist">
+                        <input type="submit" name="alchemistbtn" value="The Alchemist" id="gopage" />
+                    </form>
+                </h3>
+                <p>
+                    This story, dazzling in its powerful simplicity and soul-stirring wisdom, is about an Andalusian
                     shepherd boy named Santiago, who travels from his homeland in Spain to the Egyptian desert in search
-                    of a treasure buried near the Pyramids.</p>
+                    of a treasure buried near the Pyramids.
+                </p>
             </div>
         </div>
         <div class="booklistmember booklistmember1">
             <img src="fiction1.png" class="booklistmemberimg" />
             <div class="booklistmembercontent">
-                <h3>Written in the stars</h3>
+                <h3>
+                    <form name="writtenstars" id="writtenstars" class="writtenstars" method="GET"
+                        action="/writtenstars">
+                        <input type="submit" name="writtenstarsbtn" value="Written in the Stars" id="gopage" />
+                    </form>
+                </h3>
                 <p>Realistic fiction that will change your life</p>
             </div>
         </div>
