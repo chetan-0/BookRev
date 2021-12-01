@@ -1,6 +1,8 @@
 body {
   margin: 0%;
   padding: 0%;
+
+  background-color: rgba(97, 43, 223, 0.7);
 }
 
 #welcome {
@@ -9,10 +11,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   color: black;
 }
 
@@ -28,14 +30,14 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0%;
   padding: 0%;
 }
@@ -49,11 +51,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0%;
   padding: 5% 1%;
 }
@@ -86,7 +88,9 @@ a {
   background-position: center;
   background-size: 270%;
 }
-
+.cards {
+  border-radius: 10px;
+}
 #nonfiction {
   background-image: url("nonfiction.jpg");
   background-repeat: no-repeat;

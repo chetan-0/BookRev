@@ -18,7 +18,7 @@ $(function () {
   });
   $('.open-menu').height($(window).height());
 });
-function sell() {
+// function sell() {
 
-  document.getElementById("sell").style.Color = "black";
-}
+//   document.getElementById("sell").style.Color = "black";
+// }
