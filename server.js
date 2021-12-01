@@ -11,6 +11,7 @@ app.use(express.static(path.join(__dirname, 'css')))
 app.use(express.static(path.join(__dirname, 'assets')))
 
 app.get('/register', (req, res) => {
+   
     res.sendFile(path.join(__dirname, 'index.html'))
 })
 
@@ -20,6 +21,7 @@ app.post('/reg', u, function (req, res) {
         name: req.body.signupmail,
         password: req.body.signuppass
     }
+
     MongoClient.connect('mongodb://localhost:27017/', function (err, db) {
         if (err)
             throw err;
@@ -36,6 +38,7 @@ app.post('/log', u, (req, res) => {
         name: req.body.loginmail,
         password: req.body.loginpass
     }
+   
     MongoClient.connect('mongodb://localhost:27017/', function (err, db) {
         if (err)
             throw err;

@@ -63,7 +63,7 @@
           </span><br><br>
 
           <label style="font-size: 1.2em;"><b>Short Description:</b></label>
-          <textarea name="desc" class="binput" ng-model="desc" pattern="[a-zA-Z ]" required=""></textarea><br>
+          <textarea name="desc" class="binput" ng-model="desc" pattern="[a-zA-Z ]{1,}" required=""></textarea><br>
           <span ng-show="myForm.$submitted || myForm.desc.$dirty">
             <span class="error" ng-show="myForm.desc.$error.required"><i class="fa fa-exclamation-circle"></i>
               Description required</span>
