@@ -74,6 +74,33 @@ app.get('/writtenstars', (req, res) => {
     res.sendFile(path.join(__dirname, './html/explore_subpages/fiction_stars.html'))
 })
 
+app.post('/sell', u, function (req, res) {
+    // console.log('Hi')
+    var response = {
+        name: req.body.name,
+        description: req.body.desc,
+        cost: req.body.cost,
+        sellprice: req.body.sellprice,
+        contact: req.body.phone,
+        bookpic: req.body.fileupload,
+    }
+
+    MongoClient.connect('mongodb://localhost:27017/', function (err, db) {
+        if (err)
+            throw err;
+        else
+            console.log("mongo connected!")
+        var dbo = db.db("base2");
+        dbo.collection('sell').insertOne(response);
+    })
+    res.sendFile(path.join(__dirname, './html/sell.html'))
+})
+
+
+
+
+
+
 app.listen(3000, () => {
     console.log('BookRev server running!')
 })

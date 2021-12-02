@@ -11,7 +11,7 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="../landing.js"></script>
+  <!-- <script src="../landing.js"></script> -->
 </head>
 
 <body>
@@ -51,10 +51,10 @@
   <div class="main">
     <div class="formcss">
       <div ng-app="" class="cen">
-        <form name="myForm" novalidate="" id="formcss" action="">
+        <form name="myForm" id="formcss" method="POST" action="/sell">
           <h1><u>Enter details of the book to be sold</u></h1>
           <label style="font-size: 1.2em;"><b>Name of the book:</b></label>
-          <input type="text" class="input" name="name" ng-model="name" pattern="[a-zA-Z ]{1,}" required=""><br>
+          <input type="text" class="input" name="name" ng-model="name" pattern="[a-zA-Z ]{1,}" required><br>
           <span ng-show="myForm.$submitted || myForm.name.$dirty">
             <span class="error" ng-show="myForm.name.$error.required"><i class="fa fa-exclamation-circle"></i> Name
               Required</span>
@@ -63,7 +63,7 @@
           </span><br><br>
 
           <label style="font-size: 1.2em;"><b>Short Description:</b></label>
-          <textarea name="desc" class="binput" ng-model="desc" pattern="[a-zA-Z ]{1,}" required=""></textarea><br>
+          <textarea name="desc" class="binput" ng-model="desc" pattern="[a-zA-Z ]{1,}" required></textarea><br>
           <span ng-show="myForm.$submitted || myForm.desc.$dirty">
             <span class="error" ng-show="myForm.desc.$error.required"><i class="fa fa-exclamation-circle"></i>
               Description required</span>
@@ -73,24 +73,24 @@
 
           <label style="font-size: 1.2em;"><b>Cost price of book:</b></label>
           <input type="number" class="sinput" name="cost" ng-model="cost" ng-minlength="3" ng-maxlength="10"
-            required=""><br>
+            required><br>
           <span ng-show="myForm.$submitted || myForm.cost.$dirty">
             <span class="error" ng-show="myForm.cost.$error.required"><i class="fa fa-exclamation-circle"></i> Cost
               price Required</span>
             <span class="error"
-              ng-show="((myForm.cost.$error.minlength || myForm.cost.$error.maxlength) &amp;&amp; myForm.phone.$dirty)"><i
+              ng-show="myForm.cost.$error.minlength || myForm.cost.$error.maxlength"><i
                 class="fa fa-exclamation-circle"></i> Cost price should be atleast 100</span>
           </span><br><br>
 
           <label style="font-size: 1.2em;"><b>Selling price of book:</b></label>
-          <input type="number" class="sinput" name="sell" ng-model="sell" ng-minlength="3" ng-maxlength="10"
-            required=""><br>
-          <span ng-show="myForm.$submitted || myForm.sell.$dirty">
-            <span class="error" ng-show="myForm.sell.$error.required"><i class="fa fa-exclamation-circle"></i> Selling
+          <input type="number" class="sinput" name="sellprice" ng-model="sell" ng-minlength="3" ng-maxlength="10"
+            required><br>
+          <span ng-show="myForm.$submitted || myForm.sellprice.$dirty">
+            <span class="error" ng-show="myForm.sellprice.$error.required"><i class="fa fa-exclamation-circle"></i> Selling
               price Required</span>
             <span class="error"
-              ng-show="((myForm.sell.$error.minlength || myForm.sell.$error.maxlength) &amp;&amp; myForm.phone.$dirty)"><i
-                class="fa fa-exclamation-circle"></i> Selling price should be atleast 100</span>
+              ng-show="myForm.sellprice.$error.minlength || myForm.sellprice.$error.maxlength">
+              <i class="fa fa-exclamation-circle"></i> Selling price should be atleast 100</span>
           </span><br><br>
 
 
@@ -110,9 +110,13 @@
           <br>
           <div class="form-group">
             <label for="inputfile" style="font-size: 1.2em;"><b>Upload picture of book:</b></label>
-            <input type="file" id="fileupload" file-mode;="cust.file">
+            <!-- <input type="file" id="fileupload" file-mode;="cust.file" /> -->
+            <input type="file" id="fileupload" name="fileupload" accept="image/png, image/jpeg" required />
           </div>
-          <button type="submit" class="sellbtn" id="sell"> Submit</button>
+          <button type="submit" class="sellbtn"
+            ng-disabled="(myForm.name.$dirty&& myForm.name.$invalid)||(myForm.desc.$dirty&& myForm.desc.$invalid)||(myForm.cost.$dirty&&myForm.cost.$invalid)||(myForm.sellingprice.$dirty&&myForm.sellingprice.$invalid)"
+            >
+            Submit</button>
         </form>
       </div>
     </div>
