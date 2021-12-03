@@ -16,6 +16,25 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
     <style>
+        body {
+            /* background: url("remembermebg.jpeg"); */
+            background-image: url("../explore_subpages/remembermebg.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        body:before {
+            content: "";
+            display: block;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
         .container {
             display: flex;
             flex-direction: column;
@@ -43,7 +62,8 @@
             grid-row-start: 1;
             grid-row-end: 3;
         }
-        .bigdesp{
+
+        .bigdesp {
             grid-column-start: 1;
             grid-column-end: 3;
 
@@ -54,16 +74,20 @@
 
 <body>
     <div class="container">
-        <h1>Remember Me<br /><i>A Spanish Civil War Novel by Mario Escobar</i></h1>
+        <h1 style="font-family: cursive; font-weight: bold;">Remember Me<br /><i>A Spanish Civil War Novel by Mario
+                Escobar</i></h1>
         <div class="imgdesp">
             <img src="fiction2.jpg" class="booklistmemberimg" width="100%" />
-            <p style="padding-top:2%;">
-                <i>
-                    "At the height of the Spanish Civil War, 500 children are shipped to Mexico to escape the bloody
-                    violence. The intent was to bring them back at the war's end, but when WWII hits, the children are
-                    left stranded away from their family and the only home they ever knew."
-                </i>
-            </p>
+            <div style="background-color:rgba(131, 169, 158,0.6); height:fit-content; padding:0%; border-radius: 20px;">
+                <p style="padding:2%; margin:0%;">
+                    <i>
+                        "At the height of the Spanish Civil War, 500 children are shipped to Mexico to escape the bloody
+                        violence. The intent was to bring them back at the war's end, but when WWII hits, the children
+                        are
+                        left stranded away from their family and the only home they ever knew."
+                    </i>
+                </p>
+            </div>
             <div>
                 <table cellpadding="6px" cellspacing="0">
                     <thead>
