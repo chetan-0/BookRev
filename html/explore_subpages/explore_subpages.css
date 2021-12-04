@@ -3,14 +3,11 @@ body {
     padding: 0%;
 
     background-image: url("books_bg.jpg");
-    /* background-repeat: no-repeat; */
-    /* background-position: center; */
     background-size: cover;
 }
 #welcome {
     margin-top: 2%;
     display: flex;
-    /* flex-direction: column; */
     align-content: center;
     justify-content: center;
 
@@ -21,13 +18,6 @@ body {
     margin-top: 2%;
     margin-bottom: 5%;
 }
-
-/* #goback {
-    position: absolute;
-    margin-left: 5%;
-    
-} */
-
 .booklistmember {
     width: 90%;
     margin: 2% auto;

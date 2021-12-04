@@ -5,7 +5,6 @@
 
 body{
     background-image: url("books_bg.jpg");
-    /* background-repeat: no-repeat; */
     background-position: center;
     background-size:cover;
 }
@@ -15,8 +14,7 @@ body{
 }
 
 .login-container{
-    /* background-color:red; */
-    position:block; /* extra to prevent empty rele set */
+    position:block;
 }
 
 .login-form {
@@ -31,8 +29,6 @@ body{
 }
 
 #login{
-    /* background:red; */
-    
     left: 50px;
     display:flex;
     flex-direction: column;
@@ -40,8 +36,6 @@ body{
     justify-content:space-between;
 }
 #sign-up{
-    /* background:red; */
-    
     left: 450px;
     display:flex;
     flex-direction: column;
@@ -55,7 +49,6 @@ body{
     box-shadow: 0 0 20px 9px #5144ff1f;
     border-radius: 30px;
 
-    /* changes */
     display: flex;
     justify-content: space-between;
     width: 62%;
@@ -68,8 +61,6 @@ body{
     outline: none;
     position: relative;
 
-    /* changes */
-    /* background-color:rgba(0,0,0,0.5); */
     width: 45%;
     margin: 0%;
 }
@@ -80,8 +71,6 @@ body{
     background: linear-gradient(to right, rgb(140, 138, 255), rgb(140, 138, 255));
     border-radius: 30px;
 
-    /* changes */
-    /* display:none; */
     transition: all 1s linear;
 }
 .credentials {
@@ -93,7 +82,6 @@ body{
 .input {
     width: 100%;
     padding: 5px 5px;
-    /* margin: 5px 0; */
     outline: none;
     background: transparent;
     border-radius: 10px;

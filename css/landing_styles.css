@@ -51,7 +51,7 @@ nav a {
   text-align: center;
   text-decoration: none;
   padding: 10%;
-  padding-left:0%;
+  padding-left: 0%;
   color: #eee;
   text-decoration: none;
 }
@@ -76,8 +76,8 @@ nav a#openup {
   .text {
     margin-left: 0%;
   }
-  .textcontent{
-    padding-left:5%;
+  .textcontent {
+    padding-left: 5%;
   }
 }
 
