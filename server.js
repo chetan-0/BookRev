@@ -1,20 +1,37 @@
-const express = require('express')
-const bodyParser = require('body-parser')
+const express = require('express');
+const bodyParser = require('body-parser');
 const path = require('path');
 const MongoClient = require('mongodb').MongoClient;
+const cookieParser = require('cookie-parser');
+const session = require('express-session')
+
 
 const app = express()
+app.use(cookieParser());
+app.use(session({secret: "secret"}));
 const u = bodyParser.urlencoded({ extended: false })
 
 app.use(express.static(path.join(__dirname, 'html')))
 app.use(express.static(path.join(__dirname, 'css')))
 app.use(express.static(path.join(__dirname, 'assets')))
 
-app.get('/register', (req, res) => {
-   
+app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'))
 })
 
+app.use(function (req, res, next) {
+    var cookie = req.cookies.cookieName; 
+    if (req.session.page)
+    {
+        req.session.page++;
+        console.log('navigated',req.session.page-1, 'times');
+    }
+    else
+    {
+        req.session.page=1;
+    }
+    next(); 
+    });
 
 app.post('/reg', u, function (req, res) {
     var response = {
@@ -75,7 +92,6 @@ app.get('/writtenstars', (req, res) => {
 })
 
 app.post('/sell', u, function (req, res) {
-    // console.log('Hi')
     var response = {
         name: req.body.name,
         description: req.body.desc,
@@ -95,11 +111,6 @@ app.post('/sell', u, function (req, res) {
     })
     res.sendFile(path.join(__dirname, './html/sell.html'))
 })
-
-
-
-
-
 
 app.listen(3000, () => {
     console.log('BookRev server running!')
