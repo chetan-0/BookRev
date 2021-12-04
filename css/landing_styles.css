@@ -7,32 +7,32 @@
 }
 
 body {
-  font-family: "Times New Roman", Times, serif;
   background-color: #eee;
 
   margin: 0;
 }
-
-img {
+.img {
   float: right;
-  padding-top: 100px;
-  padding-right: 100px;
+  padding-top: 6%;
 }
 .content {
   float: left;
-  padding-top: 150px;
-  padding-left: 90px;
+  padding-top: 10%;
+  margin-left: 5%;
+  width: 40%;
+}
+.text {
+  margin-left: 0%;
 }
 h1 {
   font-size: 4em;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: cursive;
   line-height: 1.1;
   text-align: center;
-  padding: 10px;
 }
 
 nav {
-  width: 100%;
+  width: 100vw;
   background-color: rgb(177, 144, 184);
   color: #ffffff;
   padding-left: 2%;
@@ -50,7 +50,8 @@ nav a {
   width: 100px;
   text-align: center;
   text-decoration: none;
-  padding: 10px 0;
+  padding: 10%;
+  padding-left:0%;
   color: #eee;
   text-decoration: none;
 }
@@ -61,15 +62,37 @@ nav a#openup {
   display: none;
 }
 
-@media screen and (max-width: 590px) {
-  .content {
-    padding-top: 50px;
-    padding-left: 25%;
+@media screen and (max-width: 768px) {
+  .img {
+    float: right;
+    padding-top: 6%;
   }
-  img {
-    width: 70%;
-    padding-top: 10px;
-    padding-right: 200000px;
+  .content {
+    float: left;
+    padding-top: 10%;
+    margin-left: 0%;
+    width: 100%;
+  }
+  .text {
+    margin-left: 0%;
+  }
+  .textcontent{
+    padding-left:5%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .img {
+    float: none;
+    padding-top: 6%;
+  }
+  .content {
+    padding-top: 10%;
+    margin-left: 0%;
+    width: 100%;
+  }
+  .text {
+    margin-left: 4%;
   }
   h1 {
     font-size: 2.8em;
@@ -91,9 +114,7 @@ nav a#openup {
   nav a {
     text-align: left;
     width: 100%;
-    text-indent: 25px;
-    background: rgb(177, 144, 184);
-    border-bottom: 1px solid rgb(124, 53, 138);
+    padding: 2%;
   }
   nav a:hover {
     background: #444;
@@ -131,15 +152,6 @@ nav a#openup {
   zoom: 1;
 }
 @media screen and (max-width: 400px) {
-  .content {
-    padding-top: 50px;
-    padding-left: 15%;
-  }
-  img {
-    width: 70%;
-    padding-top: 10px;
-    padding-left: 500px;
-  }
   h1 {
     font-size: 2.8em;
   }
@@ -160,9 +172,7 @@ nav a#openup {
   nav a {
     text-align: left;
     width: 100%;
-    text-indent: 25px;
     background: rgb(177, 144, 184);
-    border-bottom: 1px solid rgb(124, 53, 138);
   }
   nav a:hover {
     background: #444;
@@ -181,22 +191,7 @@ nav a#openup {
   }
   nav a#openup {
     display: block;
-    background-color: rgb(214, 200, 214);
     width: 100%;
     position: relative;
   }
-}
-@media screen and (max-width: 900px) {
-  .content {
-    padding-top: 20px;
-    padding-left: 25%;
-  }
-  img {
-    width: 50%;
-    padding-top: 5px;
-    padding-right: 200px;
-  }
-}
-.text {
-  margin-left: 100px;
 }

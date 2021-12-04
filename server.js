@@ -8,7 +8,7 @@ const session = require('express-session')
 
 const app = express()
 app.use(cookieParser());
-app.use(session({secret: "secret"}));
+app.use(session({ secret: "secret" }));
 const u = bodyParser.urlencoded({ extended: false })
 
 app.use(express.static(path.join(__dirname, 'html')))
@@ -20,18 +20,16 @@ app.get('/', (req, res) => {
 })
 
 app.use(function (req, res, next) {
-    var cookie = req.cookies.cookieName; 
-    if (req.session.page)
-    {
+    var cookie = req.cookies.cookieName;
+    if (req.session.page) {
         req.session.page++;
-        console.log('navigated',req.session.page-1, 'times');
+        console.log('navigated', req.session.page - 1, 'times');
     }
-    else
-    {
-        req.session.page=1;
+    else {
+        req.session.page = 1;
     }
-    next(); 
-    });
+    next();
+});
 
 app.post('/reg', u, function (req, res) {
     var response = {
@@ -106,7 +104,7 @@ app.post('/sell', u, function (req, res) {
     res.sendFile(path.join(__dirname, './html/sellalert.html'))
 })
 
-app.post('/gohome', function (req, res){
+app.post('/gohome', function (req, res) {
     res.sendFile(path.join(__dirname, './html/landing.html'))
 })
 

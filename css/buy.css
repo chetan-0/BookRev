@@ -3,20 +3,11 @@
 body {
   margin: 0%;
   padding: 0%;
-}
-* {
-  /* box-sizing: border-box;
-  outline: none;
-  border: none; */
-  text-decoration: none;
-  text-transform: capitalize;
-  transition: 0.2s linear;
+  background-image: url("books_bg.jpg");
+  background-size: cover;
 }
 
 .container {
-  /* background: linear-gradient(45deg, blueviolet, lightgreen); */
-  background-image: url("books_bg.jpg");
-  background-size: cover;
   padding: 0% 9%;
   padding-bottom: 10%;
 }
@@ -108,7 +99,6 @@ img {
 }
 h1 {
   font-size: 4em;
-  font-family: "PT Sans Narrow", sans-serif;
   line-height: 1.1;
   text-align: center;
   padding: 10px;
