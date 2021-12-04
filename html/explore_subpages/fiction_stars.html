@@ -16,6 +16,25 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
     <style>
+        body {
+            /* background: url("remembermebg.jpeg"); */
+            background-image: url("../explore_subpages/starsbg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        body:before {
+            content: "";
+            display: block;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
         .container {
             display: flex;
             flex-direction: column;
@@ -55,14 +74,17 @@
 
 <body>
     <div class="container">
-        <h1>Written in the Stars<br /><i>A Fable about following your dream</i></h1>
+        <h1 style="font-family: cursive; font-weight: bold;">Written in the Stars<br /><i>A Fable about following your
+                dream</i></h1>
         <div class="imgdesp">
             <img src="fiction1.png" class="booklistmemberimg" width="100%" />
-            <p style="padding-top:2%;">
-                <i>
-                    "Realistic fiction that will change your life"
-                </i>
-            </p>
+            <div style="background-color:rgba(17, 73, 135, 0.6); height:fit-content; padding:0%; border-radius: 20px;">
+                <p style="padding:2%; margin:0%;">
+                    <i>
+                        "Realistic fiction that will change your life"
+                    </i>
+                </p>
+            </div>
             <div>
                 <table cellpadding="6px" cellspacing="0">
                     <thead>
@@ -89,6 +111,11 @@
                     </thead>
                 </table>
             </div>
+            <p class="bigdesp">
+                Written in the Stars, by debut novelist Alexandria Bellefleur, is a queer romance about two women with
+                opposing life goals and very different personalities who stumble into a fake relationship that should've
+                come with a warning: Love is right around the corner, just you wait and see!
+            </p>
         </div>
     </div>
 
