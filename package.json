@@ -19,7 +19,9 @@
   "homepage": "https://github.com/chetan-0/WebTech-DA#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.6",
     "express": "^4.17.1",
+    "express-session": "^1.17.2",
     "mongodb": "^4.2.1",
     "nodemon": "^2.0.15",
     "path": "^0.12.7"
