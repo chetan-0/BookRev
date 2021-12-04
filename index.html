@@ -27,7 +27,7 @@
                 <label>Password</label>
                 <input type="password" name="loginpass" class="input" required><br><br>
                 <button type="submit" class="submit-btn">Login</button><br><br>
-                <button id="back" class="Home">Home</button>
+                <button class="Home">Home</button>
             </form>
             <form name= "form1" id="sign-up" class="credentials" method="POST" action="/reg"> 
                 <label>Email</label>
@@ -75,7 +75,7 @@
             }});
         });
         $(function(){
-            $("#back").click(function(){
+            $(".home").click(function(){
                 document.location.href="/landing.html";
             })
         })

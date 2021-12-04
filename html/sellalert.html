@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Alert</title>
+</head>
+
+<style>    
+    body {
+        background-image: url("books_bg.jpg");
+        background-position: center;
+        background-size: cover;
+        margin: 0%;
+        padding: 0%;
+    }
+    .loginform{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        max-width: 50%;
+        margin: auto;
+    }
+    .gohome{
+        background-color: aqua;
+        border: none;
+        border-radius:20px;
+
+        font-size: 1em;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+
+    <div class="loginform">
+        <div id="welcome" align="center">
+            <h1 style="font-size:10em">Sold!! :)</h1>
+        </div>
+        <form id="login" class="credentials" method="POST" action="/gohome">
+            <input type="submit" class="gohome" value="Go back Home" style="height:50px; width:150%" />
+        </form>
+    </div>
+</body>
+
+</html>
