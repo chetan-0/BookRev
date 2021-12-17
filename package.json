@@ -4,7 +4,7 @@
   "description": "",
   "main": "fileModel.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run clean && node scripts/test.js --env=jsdom --updateSnapshot",
     "start": "node server.js"
   },
   "repository": {
